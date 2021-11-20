@@ -1,0 +1,4 @@
+lib*
+pyvenv.cfg
+bin*
+*.pyc
