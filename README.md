@@ -25,7 +25,9 @@ Getting this up and runningon your z/OS is a breeze once you have conda installe
     # Optional if you want another port than 12345
     export PORT=<port-you-want>
     python3 test-app.py
-    
+
+Then point your browser to http://<ip_or_dns_of_your_mainframe>:12345/swagger-ui and...
+
 ![inaction](https://github.com/wizardofzos/flask-rest-zos/blob/main/inaction.png?raw=true)
        
     
@@ -43,3 +45,5 @@ Then in test-app.py add these lines:
 
 And off you go :)
 
+# TODO
+Add gunicorn SSL example :)
