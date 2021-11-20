@@ -25,6 +25,8 @@ Getting this up and runningon your z/OS is a breeze once you have conda installe
     # Optional if you want another port than 12345
     export PORT=<port-you-want>
     python3 test-app.py
+    
+![inaction](https://github.com/wizardofzos/flask-rest-zos/blob/main/inaction.png?raw=true)
        
     
 ## Adding endpoints to the REST-API
