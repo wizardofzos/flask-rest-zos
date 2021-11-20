@@ -12,15 +12,15 @@ Getting this up and runningon your z/OS is a breeze once you have conda installe
 ## Preparing for first run
 
     conda activate <env-that-has-python3-in-it>
-    git clone <this repo>
-    cd <this repo>
+    git clone git@github.com:wizardofzos/flask-rest-zos.git
+    cd flask-rest-zos
     python -m venv .
     . bin/activate  
     python3 -m pip install -r requirements.txt
 
 ## Running it
     conda activate <env-that-has-python3-in-it>      
-    cd /path/to/this/repo
+    cd ../../flask-rest-zos
     . bin/activate
     # Optional if you want another port than 12345
     export PORT=<port-you-want>
