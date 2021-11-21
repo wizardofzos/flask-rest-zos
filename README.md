@@ -1,4 +1,4 @@
-# flask01 - A z/OS Python Flask REST API Example
+#  flask-rest-zos - A z/OS Python Flask REST API Example
 
 
 Getting this up and runningon your z/OS is a breeze once you have conda installed :)
