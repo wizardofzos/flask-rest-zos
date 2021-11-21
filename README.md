@@ -47,3 +47,6 @@ And off you go :)
 
 # TODO
 Add gunicorn SSL example :)
+
+# Feeling generous?
+Send some ETH (or funkty tokens) to: 0x989787Df4b2c2eA8f8dEa6bFf7241916578E0862
