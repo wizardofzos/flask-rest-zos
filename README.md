@@ -18,13 +18,13 @@ Getting this up and runningon your z/OS is a breeze once you have conda installe
     . bin/activate  
     python3 -m pip install -r requirements.txt
 
-## Running it
+## Running it in devmode
     conda activate <env-that-has-python3-in-it>      
     cd ../../flask-rest-zos
     . bin/activate
     # Optional if you want another port than 12345
     export PORT=<port-you-want>
-    python3 test-app.py
+    python3 testapp.py
 
 Then point your browser to http://<ip_or_dns_of_your_mainframe>:12345/swagger-ui and...
 
@@ -45,8 +45,30 @@ Then in test-app.py add these lines:
 
 And off you go :)
 
-# TODO
-Add gunicorn SSL example :)
+# Running with gunicorn
 
+Running with gunicorn is easy:
+
+    gunicorn --bind 0.0.0.0:5000 wsgi:app
+
+But we'd also like to have it with some SSL-certs...
+For this, we just need to create our server cert and key (instructions below, using certbot is highly recommended)
+
+    gunicorn --certfile=/path/to/cert.pem \ 
+             --keyfile=key.pem            \
+             --bind 0.0.0.0:443           \
+             wsgi:app
+
+
+# Creating your (self-signed) cert
+
+Just execute these commands :)
+
+    openssl req -new > cert.csr
+    openssl rsa -in privkey.pem -out key.pem
+    openssl x509 -in cert.csr -out cert.pem -req -signkey key.pem -days 3270
+    cat key.pem>>cert.pem
+
+ 
 # Feeling generous?
-Send some ETH (or funkty tokens) to: 0x989787Df4b2c2eA8f8dEa6bFf7241916578E0862
+Send some ETH (or funky tokens) to: 0x989787Df4b2c2eA8f8dEa6bFf7241916578E0862

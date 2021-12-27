@@ -2,3 +2,6 @@ lib*
 pyvenv.cfg
 bin*
 *.pyc
+*.pem
+*.csr
+share/*
