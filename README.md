@@ -4,7 +4,7 @@
 Getting this up and runningon your z/OS is a breeze once you have conda installed :)
 You can also just clone this to your x86 Linux environment and it will run there just the same. Make sure if you're adding files that don't match the mapping in '.gitattributes' you add this mapping. That way, you can work/dev on your x86 environment and just pull it on the z/OS side....
 
-Then again, why would you run it outside of z/OS anyway? It's soo easy getting that Learner Edition via IBM no?
+Then again, why would you run it outside of z/OS anyway? It's soo easy getting that Learner Edition via IBM isn't it?
 
 ## Requirements
 
